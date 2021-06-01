@@ -1,0 +1,104 @@
+/*To be fixed:
+-The pandaHeader does not shrink when window size shrinks -- Issue declared on: 6/1/21
+*/
+
+.App
+{
+  /* For the main app -- controls everything.*/
+  text-align: center;
+  height: 100vh;
+  background: #13182b;                                       /*background*/
+  color: #fff2c5;                         
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /*font of words*/
+}
+
+/*_______FORM STUFF_________*/
+.form-control{
+  
+  background-color:#fff2c5 !important;    /*Color of inner boxes.*/
+}
+
+form
+{
+  font-weight: bold;
+  background-color: #bdeae5;
+  padding: 1em;       
+  border-radius: 10%;                       /*Rounded border*/
+  color: #13182b;                         /*Color of words within form*/
+}
+
+.formCleanup
+{
+  /*This is what centers the entire form section*/
+  /*The importants override the .app*/
+  display: flex !important;                  /*background*/
+  justify-content: center !important;        /*background*/
+  align-items: center !important;;           /*background*/
+  background: #13182b !important;          /*background*/
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+/*_______END OF FORM STUFF_________*/
+
+.Image
+{
+  /*Panda Image Circle in center of header*/
+  background: #fff2c5;
+  border-radius: 28%;
+}
+
+.enterImage
+{ 
+  /*Image in the side of the Enter Button*/
+  width: 50px;
+  height: auto;
+}
+
+.title
+{
+  /*Panda Contact font thickness for the title*/
+  font-weight: bolder;
+  font-size: 250%;
+}
+
+.welMessage
+{
+  /*Welcome message detailing*/
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  justify-content: center !important;       /*background*/
+  background-color: #bdeae5;
+  padding: 10px;     
+  border:#13182b;  
+  border-radius: 50px;                       /*Rounded border*/
+  color: #13182b;                         /*Color of words within form*/
+  font-weight: 800;
+
+}
+
+.pandaHeader
+{
+  /*Code for top header with Panda in the center!*/
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  justify-content: center !important;        /*background*/
+  background-color: #bdeae5;
+  padding: 10px;       
+  border-radius: 50px;                       /*Rounded border*/
+  color: #13182b;                          /*Color of words within form*/
+  font-weight: bolder;
+  word-break: break-all;                     /*Words break when window is minimized*/
+  
+}
+
+.button
+{
+  /*code for Button*/
+  background-color: #ba2f28 !important;
+  color:#fff2c5 !important;             /*Color of words within button*/
+  font-weight :bold !important;
+
+}
