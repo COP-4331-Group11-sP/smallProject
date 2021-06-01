@@ -4,46 +4,61 @@ import {Button, Image, Form, Row, Col, Container, Nav, Navbar} from 'react-boots
 import pandaIconSVG from "./pandaIconSVG.svg"
 import enterPandaIcon from "./vers2EnterPandaIcon.svg"
 
+
 function App() {
   return (
     <div className="App">
 
-    <br/><br/>
-
+    <br/> <br/>
     {/*TITLE + PANDA ICON*/}
     <Navbar className = "pandaHeader">
           <p className = "title">&nbsp;&nbsp;&nbsp;&nbsp;PANDA&nbsp;</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Image className = "Image" src={pandaIconSVG} roundedCircle/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p className = "title"> CONTACT</p>
     </Navbar>
 
-    <br/>
-
+    <br/> 
     {/*WELCOME MESSAGE UNDER TITLE*/}
     <Navbar className = "welMessage">
-    Welcome! Please login below!
-    </Navbar>  
-
+    Welcome! You're one step away from a panda themed contact manager.
+    </Navbar>
+    
     <br/>
-
-    <Container className="formCleanup" >
+    {/*BOX WITH FORM INSIDE*/}
+    <Container className = "formCleanup">
       <Form>
-          <Form.Label>Username</Form.Label>
-            <Form.Control placeholder="Enter Username" />
-            <br/>
-          <Form.Label>Password</Form.Label>
-            <Form.Control placeholder="Enter Password" />
+        <Form.Row>
+          {/*FIRST NAME*/}
+          <Col>
+              <Form.Label> First Name: </Form.Label>
+              <Form.Control placeholder="First name" />
+          </Col>
 
-            <br/>
+          {/*LAST NAME*/}
+          <Col>
+              <Form.Label> Last Name: </Form.Label>
+              <Form.Control placeholder="Last name" />
+          </Col>
+        </Form.Row>
 
-            <Button className = "registerButton"> &nbsp;&nbsp;&nbsp;Register &nbsp;&nbsp; 
-            </Button>
+        <br/>
+         {/*USERNAME*/}
+          <Form.Group controlId="Username">
+            <Form.Label> Username: </Form.Label>
+            <Form.Control type="Username" placeholder="Create Username" />
+          </Form.Group>
 
-          <Button className = "enterButton"> Enter <Image className = "enterImage" src={enterPandaIcon}/> 
-          </Button>
-      </Form>
-     </Container>
-     </div>
+         {/*PASSWORD*/}
+         <Form.Group controlId="formGroupPassword">
+           <Form.Label>Password:</Form.Label>
+           <Form.Control type="password" placeholder=" Create Password" />
+         </Form.Group>
+
+        {/*BUTTON + MINI PANDA IMAGE*/}
+         <Button className = "button"> Enter <Image className = "enterImage" src={enterPandaIcon}/> </Button>
+      </Form> 
+      </Container>
+      
+    </div>
   );
 }
 
 export default App;
-
