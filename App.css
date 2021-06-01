@@ -7,9 +7,14 @@
   /* For the main app -- controls everything.*/
   text-align: center;
   height: 100vh;
+  width: 100%;
   background: #13182b;                                       /*background*/
   color: #fff2c5;                         
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /*font of words*/
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*font of words*/
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  
 }
 
 /*_______FORM STUFF_________*/
@@ -22,9 +27,10 @@ form
 {
   font-weight: bold;
   background-color: #bdeae5;
-  padding: 1em;       
+  padding: 1em !important;       
   border-radius: 10%;                       /*Rounded border*/
   color: #13182b;                         /*Color of words within form*/
+  
 }
 
 .formCleanup
@@ -35,11 +41,32 @@ form
   justify-content: center !important;        /*background*/
   align-items: center !important;;           /*background*/
   background: #13182b !important;          /*background*/
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  
 
 }
 
-/*_______END OF FORM STUFF_________*/
+.registerButton
+{
+  /*code for Button*/
+  background-color:#13182b !important;
+  color:#fff2c5 !important;             /*Color of words within button*/
+  font-weight :bold !important;
+  margin-right: 5px;
+
+}
+
+.enterButton
+{
+  /*code for Button*/
+  background-color: #ba2f28 !important;
+  color:#fff2c5 !important;             /*Color of words within button*/
+  font-weight :bold !important;
+  margin-right: 5px;
+
+}
+
 
 .Image
 {
@@ -51,7 +78,7 @@ form
 .enterImage
 { 
   /*Image in the side of the Enter Button*/
-  width: 50px;
+  width: 35px;
   height: auto;
 }
 
@@ -87,18 +114,9 @@ form
   justify-content: center !important;        /*background*/
   background-color: #bdeae5;
   padding: 10px;       
-  border-radius: 50px;                       /*Rounded border*/
+  border-radius: 50px;                        /*Rounded border*/
   color: #13182b;                          /*Color of words within form*/
   font-weight: bolder;
-  word-break: break-all;                     /*Words break when window is minimized*/
-  
-}
-
-.button
-{
-  /*code for Button*/
-  background-color: #ba2f28 !important;
-  color:#fff2c5 !important;             /*Color of words within button*/
-  font-weight :bold !important;
+  word-break: break-all;                       /*Words break when window is minimized*/
 
 }
