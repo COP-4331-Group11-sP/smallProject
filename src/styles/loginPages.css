@@ -1,0 +1,64 @@
+/*_______FORM STUFF_________*/
+.form-control{
+  background-color:#fff2c5 !important;    /*Color of inner boxes.*/
+}
+
+
+
+.registerForm {
+  max-width: 400px;
+}
+
+
+.registerButton
+{
+  /*code for Button*/
+  background-color:#13182b !important;
+  color:#fff2c5 !important;             /*Color of words within button*/
+  font-weight :bold !important;
+  vertical-align: middle;
+}
+
+.registerButton:hover {
+  filter: brightness(0.9);
+}
+
+
+
+.enterButton
+{
+  /*code for Button*/
+  background-color: #E2362D !important;
+  color:#fff2c5 !important;             /*Color of words within button*/
+  font-weight :bold !important;
+  vertical-align: middle;
+  transition: filter 0.3s;
+}
+
+.enterButton:hover {
+  filter: brightness(0.9);
+}
+
+.enterImage
+{ 
+  /*Image in the side of the Enter Button*/
+  width: 35px;
+  height: auto;
+}
+
+
+
+.welMessage
+{
+  /*Welcome message detailing*/
+  width: fit-content;
+  margin: auto;
+  padding: 10px 30px;
+  justify-content: center !important;       /*background*/
+  background-color: #bdeae5;
+  border:#13182b;  
+  border-radius: 50px;                       /*Rounded border*/
+  color: #13182b;                         /*Color of words within form*/
+  font-weight: 800;
+}
+

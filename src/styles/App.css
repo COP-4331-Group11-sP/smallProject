@@ -1,0 +1,36 @@
+.App
+{
+  /* For the main app -- controls everything.*/
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #13182b;                                       /*background*/
+  background-color: #13182b;
+  color: #fff2c5;                         
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*font of words*/
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+form
+{
+  font-weight: bold;
+  background-color: #bdeae5;
+  padding: 1em !important;       
+  border-radius: 10px;                       /*Rounded border*/
+  color: #13182b;                         /*Color of words within form*/
+}
+
+
+.toBlur {
+  transition: all .7s ease-in-out;
+}
+
+.blur{
+  filter: blur(7px);
+}
+
+.errorText {
+  color: #E2362D;
+}
